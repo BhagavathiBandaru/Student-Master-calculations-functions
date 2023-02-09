@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="sectionHome" class="">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <form id="form" action="/">
+                <h1>Login</h1>
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Password again</label>
+                    <input id="password2" name="password2" type="password">
+                    <div class="error"></div>
+                </div>
+                <button onclick="display('sectionAfterSignUp')" type="submit" id="signUpForm">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div id="sectionAfterSignUp" class="studentMasterPage">
+
+
+        <div class="student-section d-flex flex-row justify-content-center">
+            <div class="pt-5 pb-5">
+                <div>
+                    <label for="firstNumber">Value-1</label>
+                    <input class="user-input" id="firstNumber" type="text" placeholder="Enter the value" />
+                </div>
+                <div>
+                    <label for="secondNumber">Value-2</label>
+
+                    <input class="user-input" id="secondNumber" type="text" placeholder="Enter the value" />
+                </div>
+            </div>
+            <div>
+                <img src="https://helendipity.files.wordpress.com/2020/11/thinking.gif" class="image" />
+            </div>
+
+        </div>
+        <div class="text-center">
+            <button id="checkButton" class=" btnEle btn btn-success" onclick="checkOption()">
+                Ask your Master!
+            </button>
+
+
+            <h1 class="text-center">Arthimetic Operation</h1>
+        </div>
+        <div class="master-section d-flex flex-row justify-content-center">
+            <div>
+                <img class="img" src="https://www.animatedimages.org/data/media/385/animated-teacher-image-0002.gif" />
+            </div>
+            <div>
+                <div>
+                    <label for="userInput">ADD</label>
+
+                    <input class="user-input" type="text" id="userInput" />
+                </div>
+                <div>
+                    <label for="userInput2">SUB</label>
+
+                    <input class="user-input" type="text" id="userInput2" />
+                </div>
+                <div>
+                    <label for="userInput3">MUL</label>
+
+                    <input class="user-input" type="text" id="userInput3" />
+                </div>
+                <div>
+                    <label for="userInput4" class="m-1">DIV</label>
+
+                    <input class="user-input" type="text" id="userInput4" />
+                </div>
+                <div>
+                    <button id="checkButton" class=" btnEle btn btn-danger" onclick="display('sectionHome')">
+                        Logout
+                    </button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
